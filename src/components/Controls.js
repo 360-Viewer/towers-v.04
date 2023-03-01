@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import styles from "./Controls.module.css";
 import zoom_in from "../assets/icons/zoom-in.svg";
 import zoom_out from "../assets/icons/zoom-out.svg";
@@ -10,8 +10,9 @@ import autorotate from "../assets/icons/autorotate.svg";
 import home from "../assets/icons/home.svg";
 
 
-function Controls({ psvRef, homeIconExists }) {
+function Controls({ psvRef }) {
   const navigate = useNavigate();
+  const { block, level } = useParams();
 
   const handleLeftClick = () => {
     psvRef.current.animate({
@@ -51,7 +52,7 @@ function Controls({ psvRef, homeIconExists }) {
   return (
     <div className={styles.controls}>
       <div className={styles.buttons}>
-        {homeIconExists && <button onClick={handleHomeClick}>
+        {block && level && <button onClick={handleHomeClick}>
           <img src={home} />
         </button>}
         <button onClick={handleLeftClick}>
