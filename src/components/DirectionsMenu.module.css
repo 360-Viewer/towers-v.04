@@ -1,0 +1,61 @@
+.directionsMenu {
+    z-index: 1;
+    position: absolute;
+    top: 12px;
+    left: 84px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.directionsMenuBackground {
+    position: absolute;
+    top: 14px;
+    width: 76px;
+    height: 128px;
+    background-color: rgba(60, 60, 60, 0.3);
+    clip-path: polygon(0% 12%, 33% 12%, 33% 0%, 67% 0%, 67% 12%, 100% 12%, 100% 88%, 67% 88%, 67% 100%, 33% 100%, 33% 88%, 0% 88%);
+}
+
+.directionsHorizontalContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    margin-bottom: 36px;
+}
+
+.directionsButton {
+    background-color: #bcbcbd;
+    opacity: 0.3;
+    border: none;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.directionsButton:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
+}
+
+
+.corner1 {
+    position: relative;
+    top: 14px;
+}
+
+.corner2 {
+    position: relative;
+    bottom: 14px;
+}
+
+

@@ -1,4 +1,12 @@
-export const home_img = ""
+export const home_pano = require("../assets/panos/day/A-21.jpg");
+export const home_panoData = null;
+export const home_pano_props = {
+  "block": "A-Block",
+  "level": "L21",
+  "time": "Day",
+  "direction": "sc",
+};
+
 export const panos = {
   "A-Block": {
     "L100": {
