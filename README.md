@@ -1,5 +1,8 @@
-# Getting Started with Create React App
+# Description
 
+This is a website that allows the display and navigation of panoramic 360-degree photos of three skyscraper buildings using the react-sphere-viewer library.
+
+# Getting Started
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
