@@ -61,9 +61,9 @@ function Controls({ psvRef }) {
         <button onClick={handleRightClick}>
           <img src={right} />
         </button>
-        <button onClick={() => psvRef.current.toggleAutorotate()}>
+        {/* <button onClick={() => psvRef.current.toggleAutorotate()}>
           <img src={autorotate} />
-        </button>
+        </button> */}
         <button onClick={handleZoomIn}>
           <img src={zoom_in} />
         </button>
