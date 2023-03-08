@@ -18,7 +18,6 @@
 }
 
 /* animasyon kaldirilabilir */
-
 .blurred::after {
     content: "";
     position: absolute;

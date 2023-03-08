@@ -8,33 +8,33 @@ import TourDetailed from './pages/TourDetailed';
 export const AppContext = createContext();
 
 function App() {
-  const [panoChanged, setPanoChanged] = useState(false);
+	const [panoChanged, setPanoChanged] = useState(false);
 
-  // prevent right click
-  // useEffect(() => {
-  //   document.addEventListener("contextmenu", (e) => e.preventDefault());
-  // }, []);
+	// prevent right click
+	// useEffect(() => {
+	//   document.addEventListener("contextmenu", (e) => e.preventDefault());
+	// }, []);
 
-  const value = useMemo(() => ({
-    panoChanged,
-    setPanoChanged
-  }), [
-    panoChanged,
-    setPanoChanged,
-  ]);
+	const value = useMemo(
+		() => ({
+			panoChanged,
+			setPanoChanged,
+		}),
+		[panoChanged, setPanoChanged]
+	);
 
-  return (
-    <div className={styles.app} onDragStart={(e) => e.preventDefault()}>
-      <AppContext.Provider value={value}>
-        <Routes>
-          <Route path={"/"} element={<Tour />} />
-          <Route path={`/:block/:level/`} element={<TourDetailed />} />
-          <Route path={"/404"} element={<Costum404 />} />
-          <Route path="*" element={<Costum404 />} />
-        </Routes>
-      </AppContext.Provider>
-    </div>
-  );
+	return (
+		<div className={styles.app} onDragStart={(e) => e.preventDefault()}>
+			<AppContext.Provider value={value}>
+				<Routes>
+					<Route path={'/'} element={<Tour />} />
+					<Route path={`/:block/:level/`} element={<TourDetailed />} />
+					<Route path={'/404'} element={<Costum404 />} />
+					<Route path="*" element={<Costum404 />} />
+				</Routes>
+			</AppContext.Provider>
+		</div>
+	);
 }
 
 export default App;
