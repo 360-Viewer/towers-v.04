@@ -171,11 +171,11 @@ function Menu({ psvRef }) {
 					);
 				})}
 			</div>
-			<DirectionsMenu
+			{/* <DirectionsMenu
 				psvRef={psvRef}
 				currentPanoProps={currentPanoProps}
 				setCurrentPanoProps={setCurrentPanoProps}
-			/>
+			/> */}
 			<div
 				className={styles.verticalContainer}
 				style={{ right: '12px', top: '12px' }}
