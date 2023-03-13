@@ -18,7 +18,17 @@ export function loadPanorama(
 	psvRef.current
 		.setPanorama(pano, {
 			showLoader: false,
-			panoData: panoData,
+			panoData: {
+				fullWidth: 14366,
+				fullHeight: 7183,
+				croppedWidth: 9607,
+				croppedHeight: 7183,
+				croppedX: 2380,
+				croppedY: 0,
+				poseHeading: 0, // 0 to 360
+				posePitch: 0, // -90 to 90
+				poseRoll: 0, // -180 to 180
+			},
 		})
 		.then(() => {
 			setPanoChanged(false);
@@ -26,50 +36,27 @@ export function loadPanorama(
 				psvRef.current.animate({
 					yaw: psvRef.current.getPosition().yaw + 0.1,
 					pitch: psvRef.current.getPosition().pitch,
-					speed: '0.5rpm',
+					speed: '1rpm',
 				});
 			}
-			// Directions = s9, ww, s1, ss, sc, nn, s6, ee, s4
-			// range is between 0 and 2pi
 			psvRef.current.setOption('defaultYaw', 0);
 			const visibleRange = psvRef.current.getPlugin(VisibleRangePlugin);
-			switch (direction) {
-				case 's9':
-					visibleRange.setHorizontalRange([0, 0.5 * Math.PI]);
-					break;
-				case 'ww':
-					visibleRange.setHorizontalRange([0.5 * Math.PI, Math.PI]);
-					break;
-				case 's1':
-					visibleRange.setHorizontalRange([Math.PI, 1.5 * Math.PI]);
-					break;
-				case 'ss':
-					visibleRange.setHorizontalRange([1.5 * Math.PI, 2 * Math.PI]);
-					break;
-				case 'sc':
-					visibleRange.setHorizontalRange(null);
-					break;
-				case 'nn':
-					visibleRange.setHorizontalRange([0, 2 * Math.PI]);
-					break;
-				case 's6':
-					visibleRange.setHorizontalRange([0, 2 * Math.PI]);
-					break;
-				case 'ee':
-					visibleRange.setHorizontalRange([0, 2 * Math.PI]);
-					break;
-				case 's4':
-					visibleRange.setHorizontalRange([0, 2 * Math.PI]);
-					break;
-				default:
-					break;
-			}
+			visibleRange.setRangesFromPanoData();
+			visibleRange.setVerticalRange([0, 0]);
 		});
 }
 
 function Panorama({ psvRef, pano, panoData, setIsLoaded }) {
-	const appContext = useContext(AppContext);
-	const { panoChanged } = appContext;
+	const { panoChanged } = useContext(AppContext);
+
+	// 0 to 3.2 		c block, red dot
+	// 5.42  to 0.62	c block, yellow dot
+	// 3.88 to 6.4 		c block, green dot
+
+	const handleClick = () => {
+		const visibleRange = psvRef.current.getPlugin(VisibleRangePlugin);
+		visibleRange.setRangesFromPanoData();
+	};
 	return (
 		<>
 			<div
@@ -84,13 +71,28 @@ function Panorama({ psvRef, pano, panoData, setIsLoaded }) {
 					src={pano}
 					defaultZoomLvl={10}
 					navbar={false}
-					onReady={() => setIsLoaded(true)}
-					panoData={panoData}
+					onReady={() => {
+						setIsLoaded(true);
+						const visibleRange = psvRef.current.getPlugin(VisibleRangePlugin);
+						visibleRange.setRangesFromPanoData();
+						visibleRange.setVerticalRange([0, 0]);
+					}}
+					panoData={{
+						fullWidth: 14366,
+						fullHeight: 7183,
+						croppedWidth: 9607,
+						croppedHeight: 7183,
+						croppedX: 2380,
+						croppedY: 0,
+						poseHeading: 0, // 0 to 360
+						posePitch: 0, // -90 to 90
+						poseRoll: 0, // -180 to 180
+					}}
 					plugins={[
 						[
 							VisibleRangePlugin,
 							{
-								verticalRange: ['0deg', '0deg'],
+								usePanoData: true,
 							},
 						],
 					]}

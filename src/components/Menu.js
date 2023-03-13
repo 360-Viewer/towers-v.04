@@ -117,13 +117,11 @@ function Menu({ psvRef }) {
 	);
 	const [levelsHovered, setLevelsHovered] = useState(true);
 	const [blockHovered, setBlockHovered] = useState(true);
-	const [timeHovered, setTimeHovered] = useState(true);
 
 	useEffect(() => {
 		setTimeout(() => {
 			setLevelsHovered(false);
 			setBlockHovered(false);
-			setTimeHovered(false);
 		}, 2000);
 	}, []);
 
@@ -131,22 +129,19 @@ function Menu({ psvRef }) {
 		<>
 			<div
 				className={styles.verticalContainer}
+				style={{
+					left: '12px',
+					top: '12px',
+					opacity: levelsHovered ? 1 : 0.3,
+					transition: levelsHovered ? 'opacity 0.5s' : 'opacity 0.5s 2s',
+				}}
 				onMouseEnter={() => {
 					setLevelsHovered(true);
-					setTimeHovered(true);
 				}}
 				onMouseLeave={() => {
 					setTimeout(() => {
 						setLevelsHovered(false);
-						setTimeHovered(false);
 					}, 2000);
-				}}
-				style={{
-					left: '12px',
-					top: '12px',
-					opacity: levelsHovered || timeHovered ? 1 : 0.3,
-					transition:
-						levelsHovered || timeHovered ? 'opacity 0.5s' : 'opacity 0.5s 2s',
 				}}
 			>
 				<div
@@ -178,32 +173,30 @@ function Menu({ psvRef }) {
 			/> */}
 			<div
 				className={styles.verticalContainer}
-				style={{ right: '12px', top: '12px' }}
+				style={{
+					right: '12px',
+					top: '12px',
+					opacity: blockHovered ? 1 : 0.3,
+					transition: blockHovered ? 'opacity 0.5s' : 'opacity 0.5s 2s',
+				}}
+				onMouseEnter={() => setBlockHovered(true)}
+				onMouseLeave={() => {
+					setTimeout(() => {
+						setBlockHovered(false);
+					}, 2000);
+				}}
 			>
-				<div
-					onMouseEnter={() => setBlockHovered(true)}
-					onMouseLeave={() => {
-						setTimeout(() => {
-							setBlockHovered(false);
-						}, 2000);
-					}}
-					style={{
-						opacity: blockHovered ? 1 : 0.3,
-						transition: blockHovered ? 'opacity 0.5s' : 'opacity 0.5s 2s',
-					}}
-				>
-					{Object.keys(panos).map((block) => {
-						return (
-							<BlockItem
-								key={block}
-								psvRef={psvRef}
-								block={block}
-								currentPanoProps={currentPanoProps}
-								setCurrentPanoProps={setCurrentPanoProps}
-							/>
-						);
-					})}
-				</div>
+				{Object.keys(panos).map((block) => {
+					return (
+						<BlockItem
+							key={block}
+							psvRef={psvRef}
+							block={block}
+							currentPanoProps={currentPanoProps}
+							setCurrentPanoProps={setCurrentPanoProps}
+						/>
+					);
+				})}
 			</div>
 		</>
 	);
