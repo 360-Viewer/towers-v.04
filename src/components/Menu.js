@@ -6,7 +6,7 @@ import sun from '../assets/icons/sun.svg';
 import { loadPanorama } from './Panorama';
 import { AppContext } from '../App';
 import ADirectionMenu from './ADirectionMenu';
-// import BDirectionMenu from './BDirectionMenu';
+import BDirectionMenu from './BDirectionMenu';
 import CDirectionMenu from './CDirectionMenu';
 
 export function withOpacityTransition(Component) {
@@ -211,8 +211,15 @@ function Menu({ psvRef }) {
 					);
 				})}
 			</div>
-			{currentPanoProps.block === 'A-Block' && (
+			{/* {currentPanoProps.block === 'A-Block' && (
 				<ADirectionMenu
+					psvRef={psvRef}
+					currentPanoProps={currentPanoProps}
+					setCurrentPanoProps={setCurrentPanoProps}
+				/>
+			)}
+			{currentPanoProps.block === 'B-Block' && (
+				<BDirectionMenu
 					psvRef={psvRef}
 					currentPanoProps={currentPanoProps}
 					setCurrentPanoProps={setCurrentPanoProps}
@@ -224,7 +231,12 @@ function Menu({ psvRef }) {
 					currentPanoProps={currentPanoProps}
 					setCurrentPanoProps={setCurrentPanoProps}
 				/>
-			)}
+			)} */}
+			<BDirectionMenu
+				psvRef={psvRef}
+				currentPanoProps={currentPanoProps}
+				setCurrentPanoProps={setCurrentPanoProps}
+			/>
 			<div
 				className={styles.verticalContainer}
 				style={{
