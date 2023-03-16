@@ -54,12 +54,12 @@ function DirectionsMenu({ psvRef, currentPanoProps, setCurrentPanoProps }) {
 							});
 							loadPanorama(
 								psvRef,
-								panos[currentPanoProps.block][currentPanoProps.level]['SOUTHEAST'][
-									currentPanoProps.time
-								],
-								panos[currentPanoProps.block][currentPanoProps.level]['SOUTHEAST'][
-									'panoData'
-								],
+								panos[currentPanoProps.block][currentPanoProps.level][
+									'SOUTHEAST'
+								][currentPanoProps.time],
+								panos[currentPanoProps.block][currentPanoProps.level][
+									'SOUTHEAST'
+								]['panoData'],
 								setPanoChanged
 							);
 						}}
@@ -106,12 +106,12 @@ function DirectionsMenu({ psvRef, currentPanoProps, setCurrentPanoProps }) {
 							});
 							loadPanorama(
 								psvRef,
-								panos[currentPanoProps.block][currentPanoProps.level][
-									'NORTH'
-								][currentPanoProps.time],
-								panos[currentPanoProps.block][currentPanoProps.level][
-									'NORTH'
-								]['panoData'],
+								panos[currentPanoProps.block][currentPanoProps.level]['NORTH'][
+									currentPanoProps.time
+								],
+								panos[currentPanoProps.block][currentPanoProps.level]['NORTH'][
+									'panoData'
+								],
 								setPanoChanged
 							);
 						}}
@@ -156,12 +156,12 @@ function DirectionsMenu({ psvRef, currentPanoProps, setCurrentPanoProps }) {
 							});
 							loadPanorama(
 								psvRef,
-								panos[currentPanoProps.block][currentPanoProps.level][
-									'WEST'
-								][currentPanoProps.time],
-								panos[currentPanoProps.block][currentPanoProps.level][
-									'WEST'
-								]['panoData'],
+								panos[currentPanoProps.block][currentPanoProps.level]['WEST'][
+									currentPanoProps.time
+								],
+								panos[currentPanoProps.block][currentPanoProps.level]['WEST'][
+									'panoData'
+								],
 								setPanoChanged
 							);
 						}}
@@ -175,51 +175,51 @@ function DirectionsMenu({ psvRef, currentPanoProps, setCurrentPanoProps }) {
 			<div className={styles.bottomButtons}>
 				<Tooltip title='North West' placement='bottom' arrow>
 					<button
-						value='NORTHWEST'
+						value='NORTHWEST_2'
 						onClick={() => {
 							setCurrentPanoProps({
 								...currentPanoProps,
-								direction: 'NORTHWEST',
+								direction: 'NORTHWEST_2',
 							});
 							loadPanorama(
 								psvRef,
 								panos[currentPanoProps.block][currentPanoProps.level][
-									'NORTHWEST'
+									'NORTHWEST_2'
 								][currentPanoProps.time],
 								panos[currentPanoProps.block][currentPanoProps.level][
-									'NORTHWEST'
+									'NORTHWEST_2'
 								]['panoData'],
 								setPanoChanged
 							);
 						}}
 						className={[styles.button]}
 						style={{
-							backgroundColor: activeDirection === 'NORTHWEST' && '#F2F2F2',
+							backgroundColor: activeDirection === 'NORTHWEST_2' && '#F2F2F2',
 						}}
 					></button>
 				</Tooltip>
 				<Tooltip title='North West' placement='bottom' arrow>
 					<button
-						value='NORTHWEST'
+						value='NORTHWEST_1'
 						onClick={() => {
 							setCurrentPanoProps({
 								...currentPanoProps,
-								direction: 'NORTHWEST',
+								direction: 'NORTHWEST_1',
 							});
 							loadPanorama(
 								psvRef,
 								panos[currentPanoProps.block][currentPanoProps.level][
-									'NORTHWEST'
+									'NORTHWEST_1'
 								][currentPanoProps.time],
 								panos[currentPanoProps.block][currentPanoProps.level][
-									'NORTHWEST'
+									'NORTHWEST_1'
 								]['panoData'],
 								setPanoChanged
 							);
 						}}
 						className={[styles.button]}
 						style={{
-							backgroundColor: activeDirection === 'NORTHWEST' && '#F2F2F2',
+							backgroundColor: activeDirection === 'NORTHWEST_1' && '#F2F2F2',
 						}}
 					></button>
 				</Tooltip>

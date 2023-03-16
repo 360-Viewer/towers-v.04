@@ -211,7 +211,7 @@ function Menu({ psvRef }) {
 					);
 				})}
 			</div>
-			{/* {currentPanoProps.block === 'A-Block' && (
+			{currentPanoProps.block === 'A-Block' && (
 				<ADirectionMenu
 					psvRef={psvRef}
 					currentPanoProps={currentPanoProps}
@@ -231,12 +231,7 @@ function Menu({ psvRef }) {
 					currentPanoProps={currentPanoProps}
 					setCurrentPanoProps={setCurrentPanoProps}
 				/>
-			)} */}
-			<BDirectionMenu
-				psvRef={psvRef}
-				currentPanoProps={currentPanoProps}
-				setCurrentPanoProps={setCurrentPanoProps}
-			/>
+			)}
 			<div
 				className={styles.verticalContainer}
 				style={{
