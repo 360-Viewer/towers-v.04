@@ -1,5 +1,5 @@
 .directionsMenu {
-	z-index: 1;
+	z-index: 10;
 	position: absolute;
 	top: 12px;
 	left: 84px;
@@ -14,7 +14,7 @@
 
 .background {
 	position: absolute;
-	z-index: 10;
+	z-index: 15;
 }
 
 .button {
