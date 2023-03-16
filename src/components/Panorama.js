@@ -14,6 +14,11 @@ export function loadPanorama(psvRef, pano, panoData, setPanoChanged) {
 		.setPanorama(pano, {
 			showLoader: false,
 			panoData: panoData,
+			sphereCorrection: {
+				pan: 0,
+				roll: 0,
+				tilt: 0,
+			},
 		})
 		.then(() => {
 			setPanoChanged(false);
