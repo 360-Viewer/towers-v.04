@@ -5,7 +5,41 @@ import moon from '../assets/icons/moon.svg';
 import sun from '../assets/icons/sun.svg';
 import { loadPanorama } from './Panorama';
 import { AppContext } from '../App';
-import A_DirectionMenu from './A_DirectionMenu';
+import ADirectionMenu from './ADirectionMenu';
+import BDirectionMenu from './BDirectionMenu';
+import CDirectionMenu from './CDirectionMenu';
+
+export function withOpacityTransition(Component) {
+	return function ComponentWithOpacityTransition(props) {
+		const [hovered, setHovered] = useState(true);
+		useEffect(() => {
+			setTimeout(() => {
+				setHovered(false);
+			}, 2000);
+		}, []);
+
+		return (
+			<div
+				onMouseEnter={() => {
+					setHovered(true);
+				}}
+				onMouseLeave={() => {
+					setTimeout(() => {
+						setHovered(false);
+					}, 2000);
+				}}
+				style={{
+					position: 'absolute',
+					zIndex: 100,
+					opacity: hovered ? 1 : 0.3,
+					transition: hovered ? 'opacity 0.5s' : 'opacity 0.5s 2s',
+				}}
+			>
+				<Component {...props} />
+			</div>
+		);
+	};
+}
 
 export const TimeItem = ({ psvRef, currentPanoProps, setCurrentPanoProps }) => {
 	const appContext = useContext(AppContext);
@@ -30,6 +64,7 @@ export const TimeItem = ({ psvRef, currentPanoProps, setCurrentPanoProps }) => {
 			<img
 				src={currentPanoProps.time === 'Day' ? moon : sun}
 				className={styles.icon}
+				alt='time'
 			/>
 		</button>
 	);
@@ -97,6 +132,7 @@ const BlockItem = ({
 			...currentPanoProps,
 			block: block,
 			level: Object.keys(panos[block])[0],
+			direction: Object.keys(panos[block][Object.keys(panos[block])[0]])[0],
 		});
 		loadPanorama(
 			psvRef,
@@ -175,11 +211,27 @@ function Menu({ psvRef }) {
 					);
 				})}
 			</div>
-			<A_DirectionMenu
-				psvRef={psvRef}
-				currentPanoProps={currentPanoProps}
-				setCurrentPanoProps={setCurrentPanoProps}
-			/>
+			{currentPanoProps.block === 'A-Block' && (
+				<ADirectionMenu
+					psvRef={psvRef}
+					currentPanoProps={currentPanoProps}
+					setCurrentPanoProps={setCurrentPanoProps}
+				/>
+			)}
+			{currentPanoProps.block === 'B-Block' && (
+				<BDirectionMenu
+					psvRef={psvRef}
+					currentPanoProps={currentPanoProps}
+					setCurrentPanoProps={setCurrentPanoProps}
+				/>
+			)}
+			{currentPanoProps.block === 'C-Block' && (
+				<CDirectionMenu
+					psvRef={psvRef}
+					currentPanoProps={currentPanoProps}
+					setCurrentPanoProps={setCurrentPanoProps}
+				/>
+			)}
 			<div
 				className={styles.verticalContainer}
 				style={{
