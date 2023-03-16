@@ -17,22 +17,21 @@ export function loadPanorama(psvRef, pano, panoData, setPanoChanged) {
 		})
 		.then(() => {
 			setPanoChanged(false);
+			// psvRef.current.setOption('defaultYaw', 0);
+			const visibleRange = psvRef.current.getPlugin(VisibleRangePlugin);
+			visibleRange.setRangesFromPanoData();
+			visibleRange.setVerticalRange([0, 0]);
+			setPanoChanged(false);
 			psvRef.current.animate({
 				yaw: psvRef.current.getPosition().yaw + 0.1,
 				pitch: psvRef.current.getPosition().pitch,
 				speed: '0.5rpm',
 			});
-			psvRef.current.setOption('defaultYaw', 0);
-			const visibleRange = psvRef.current.getPlugin(VisibleRangePlugin);
-			visibleRange.setRangesFromPanoData();
-			visibleRange.setVerticalRange([0, 0]);
-			setPanoChanged(false);
 		});
 }
 
 function Panorama({ psvRef, pano, panoData, setIsLoaded }) {
 	const { panoChanged } = useContext(AppContext);
-
 	return (
 		<>
 			<div
