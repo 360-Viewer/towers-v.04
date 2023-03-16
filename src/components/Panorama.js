@@ -9,19 +9,16 @@ import Controls from './Controls';
 
 export function loadPanorama(psvRef, pano, panoData, setPanoChanged) {
 	setPanoChanged(true);
-	// console.log(pano);
+	console.log(psvRef.current);
 	psvRef.current
 		.setPanorama(pano, {
 			showLoader: false,
 			panoData: panoData,
-			sphereCorrection: {
-				pan: 0,
-				roll: 0,
-				tilt: 0,
-			},
+			yaw: 0,
+			pitch: 0,
 		})
 		.then(() => {
-			setPanoChanged(false);
+			// setPanoChanged(false);
 			// psvRef.current.setOption('defaultYaw', 0);
 			const visibleRange = psvRef.current.getPlugin(VisibleRangePlugin);
 			visibleRange.setRangesFromPanoData();
@@ -42,6 +39,14 @@ function Panorama({ psvRef, pano, panoData, setIsLoaded }) {
 			<div
 				className={`${styles.container} ${panoChanged ? styles.blurred : ''}`}
 			>
+				{/* <button
+					onClick={() => {
+						const visibleRange = psvRef.current.getPlugin(VisibleRangePlugin);
+						visibleRange.setHorizontalRange([-Math.PI / 2, Math.PI / 2]);
+					}}
+				>
+					hello
+				</button> */}
 				<ReactPhotoSphereViewer
 					ref={psvRef}
 					loadingImg={null}
