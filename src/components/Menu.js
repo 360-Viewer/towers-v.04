@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { home_pano_props, panos } from '../assets/constants';
+import { home, home_pano_props, panos } from '../assets/constants';
 import styles from './Menu.module.css';
 import moon from '../assets/icons/moon.svg';
 import sun from '../assets/icons/sun.svg';
 import { loadPanorama } from './Panorama';
 import { AppContext } from '../App';
-import DirectionsMenu from './DirectionsMenu';
+import A_DirectionMenu from './A_DirectionMenu';
 
 export const TimeItem = ({ psvRef, currentPanoProps, setCurrentPanoProps }) => {
 	const appContext = useContext(AppContext);
@@ -16,8 +16,12 @@ export const TimeItem = ({ psvRef, currentPanoProps, setCurrentPanoProps }) => {
 		setCurrentPanoProps({ ...currentPanoProps, time: newTime });
 		loadPanorama(
 			psvRef,
-			panos[currentPanoProps.block][currentPanoProps.level][newTime],
-			panos[currentPanoProps.block][currentPanoProps.level]['panoData'],
+			panos[currentPanoProps.block][currentPanoProps.level][
+				currentPanoProps.direction
+			][newTime],
+			panos[currentPanoProps.block][currentPanoProps.level][
+				currentPanoProps.direction
+			]['panoData'],
 			setPanoChanged
 		);
 	}
@@ -46,11 +50,16 @@ const LevelItem = ({
 	}, [level, currentPanoProps.level]);
 
 	function handleClick() {
+		console.log(currentPanoProps);
 		setCurrentPanoProps({ ...currentPanoProps, level: level });
 		loadPanorama(
 			psvRef,
-			panos[currentPanoProps.block][level][currentPanoProps.time],
-			panos[currentPanoProps.block][level]['panoData'],
+			panos[currentPanoProps.block][level][currentPanoProps.direction][
+				currentPanoProps.time
+			],
+			panos[currentPanoProps.block][level][currentPanoProps.direction][
+				'panoData'
+			],
 			setPanoChanged
 		);
 	}
@@ -91,7 +100,9 @@ const BlockItem = ({
 		});
 		loadPanorama(
 			psvRef,
-			panos[block][Object.keys(panos[block])[0]][currentPanoProps.time],
+			panos[block][Object.keys(panos[block])[0]][
+				Object.keys(panos[block][Object.keys(panos[block])[0]])[0]
+			][currentPanoProps.time],
 			panos[block][Object.keys(panos[block])[0]]['panoData'],
 			setPanoChanged
 		);
@@ -112,9 +123,7 @@ const BlockItem = ({
 };
 
 function Menu({ psvRef }) {
-	const [currentPanoProps, setCurrentPanoProps] = useState(
-		localStorage.getItem('pano-props') || home_pano_props
-	);
+	const [currentPanoProps, setCurrentPanoProps] = useState(home.props);
 	const [levelsHovered, setLevelsHovered] = useState(true);
 	const [blockHovered, setBlockHovered] = useState(true);
 
@@ -166,11 +175,11 @@ function Menu({ psvRef }) {
 					);
 				})}
 			</div>
-			{/* <DirectionsMenu
+			<A_DirectionMenu
 				psvRef={psvRef}
 				currentPanoProps={currentPanoProps}
 				setCurrentPanoProps={setCurrentPanoProps}
-			/> */}
+			/>
 			<div
 				className={styles.verticalContainer}
 				style={{
