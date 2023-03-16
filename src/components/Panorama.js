@@ -39,14 +39,6 @@ function Panorama({ psvRef, pano, panoData, setIsLoaded }) {
 			<div
 				className={`${styles.container} ${panoChanged ? styles.blurred : ''}`}
 			>
-				{/* <button
-					onClick={() => {
-						const visibleRange = psvRef.current.getPlugin(VisibleRangePlugin);
-						visibleRange.setHorizontalRange([-Math.PI / 2, Math.PI / 2]);
-					}}
-				>
-					hello
-				</button> */}
 				<ReactPhotoSphereViewer
 					ref={psvRef}
 					loadingImg={null}
