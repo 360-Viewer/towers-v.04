@@ -9,7 +9,6 @@ import Controls from './Controls';
 
 export function loadPanorama(psvRef, pano, panoData, setPanoChanged) {
 	setPanoChanged(true);
-	console.log(psvRef.current);
 	psvRef.current
 		.setPanorama(pano, {
 			showLoader: false,

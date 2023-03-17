@@ -11,7 +11,7 @@ import home from '../assets/icons/home.svg';
 
 function Controls({ psvRef }) {
 	const navigate = useNavigate();
-	const { block, level } = useParams();
+	const { key } = useParams();
 
 	const handleLeftClick = () => {
 		psvRef.current.animate({
@@ -51,7 +51,7 @@ function Controls({ psvRef }) {
 	return (
 		<div className={styles.controls}>
 			<div className={styles.buttons}>
-				{block && level && (
+				{key && (
 					<button onClick={handleHomeClick}>
 						<img src={home} />
 					</button>
