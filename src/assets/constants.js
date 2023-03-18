@@ -3,7 +3,7 @@ export const home = {
 	panoData: null,
 	props: {
 		block: 'A-Block',
-		level: 'L100',
+		level: 'F27',
 		direction: '360',
 		time: 'Day',
 	},

@@ -21,11 +21,11 @@ function TourDetailed() {
 
 	const handleClick = () => {
 		const newTime = time === 'Day' ? 'Night' : 'Day';
-		setTime(newTime);
 		psvRef.current.setPanorama(links[key][newTime], {
 			showLoader: false,
 			panoData: links[key].panoData,
 		});
+		setTime(newTime);
 	};
 
 	return (
