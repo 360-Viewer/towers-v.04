@@ -141,7 +141,8 @@ const BlockItem = ({
 				Object.keys(panos[block][Object.keys(panos[block])[0]])[0]
 			]['Day'],
 			panos[block][Object.keys(panos[block])[0]]['panoData'],
-			setPanoChanged
+			setPanoChanged,
+			true
 		);
 	}
 

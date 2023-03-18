@@ -35,7 +35,8 @@ function DirectionsMenu({ psvRef, currentPanoProps, setCurrentPanoProps }) {
 								panos[currentPanoProps.block][currentPanoProps.level][
 									'SOUTHEAST'
 								]['panoData'],
-								setPanoChanged
+								setPanoChanged,
+								true
 							);
 						}}
 						className={[styles.button]}
@@ -60,7 +61,8 @@ function DirectionsMenu({ psvRef, currentPanoProps, setCurrentPanoProps }) {
 								panos[currentPanoProps.block][currentPanoProps.level]['SOUTH'][
 									'panoData'
 								],
-								setPanoChanged
+								setPanoChanged,
+								true
 							);
 						}}
 						className={[styles.button]}
@@ -85,7 +87,8 @@ function DirectionsMenu({ psvRef, currentPanoProps, setCurrentPanoProps }) {
 								panos[currentPanoProps.block][currentPanoProps.level][
 									'SOUTHWEST'
 								]['panoData'],
-								setPanoChanged
+								setPanoChanged,
+								true
 							);
 						}}
 						className={[styles.button]}
@@ -111,7 +114,8 @@ function DirectionsMenu({ psvRef, currentPanoProps, setCurrentPanoProps }) {
 							panos[currentPanoProps.block][currentPanoProps.level]['360'][
 								'panoData'
 							],
-							setPanoChanged
+							setPanoChanged,
+							true
 						);
 					}}
 					className={[styles.button]}
