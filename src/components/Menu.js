@@ -133,12 +133,13 @@ const BlockItem = ({
 			block: block,
 			level: Object.keys(panos[block])[0],
 			direction: Object.keys(panos[block][Object.keys(panos[block])[0]])[0],
+			time: 'Day',
 		});
 		loadPanorama(
 			psvRef,
 			panos[block][Object.keys(panos[block])[0]][
 				Object.keys(panos[block][Object.keys(panos[block])[0]])[0]
-			][currentPanoProps.time],
+			]['Day'],
 			panos[block][Object.keys(panos[block])[0]]['panoData'],
 			setPanoChanged
 		);

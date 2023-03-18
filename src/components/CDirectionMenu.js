@@ -19,7 +19,7 @@ function DirectionsMenu({ psvRef, currentPanoProps, setCurrentPanoProps }) {
 	return (
 		<div className={styles.directionsMenu}>
 			<div className={styles.upperButtons}>
-				<Tooltip title='South East' placement='bottom' arrow>
+				<Tooltip title='South East & East' placement='bottom' arrow>
 					<button
 						value='SOUTHEAST'
 						onClick={() => {

@@ -17,8 +17,6 @@ export function loadPanorama(psvRef, pano, panoData, setPanoChanged) {
 			pitch: 0,
 		})
 		.then(() => {
-			// setPanoChanged(false);
-			// psvRef.current.setOption('defaultYaw', 0);
 			const visibleRange = psvRef.current.getPlugin(VisibleRangePlugin);
 			visibleRange.setRangesFromPanoData();
 			visibleRange.setVerticalRange([0, 0]);
