@@ -21,7 +21,7 @@ export function loadPanorama(
 			panoData: panoData,
 			yaw: reset ? 0 : psvRef.current.getPosition().yaw,
 			pitch: reset ? 0 : psvRef.current.getPosition().pitch,
-			zoom: reset ? 0 : psvRef.current.getZoomLevel(),
+			zoom: reset ? 10 : psvRef.current.getZoomLevel(),
 		})
 		.then(() => {
 			const visibleRange = psvRef.current.getPlugin(VisibleRangePlugin);
