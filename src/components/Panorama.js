@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useContext } from 'react';
 import {
 	ReactPhotoSphereViewer,
 	VisibleRangePlugin,
@@ -7,18 +7,23 @@ import { AppContext } from '../App';
 import styles from './Panorama.module.css';
 import Controls from './Controls';
 
-export function loadPanorama(psvRef, pano, panoData, setPanoChanged) {
+export function loadPanorama(
+	psvRef,
+	pano,
+	panoData,
+	setPanoChanged,
+	reset = false
+) {
 	setPanoChanged(true);
 	psvRef.current
 		.setPanorama(pano, {
 			showLoader: false,
 			panoData: panoData,
-			yaw: 0,
-			pitch: 0,
+			yaw: reset ? 0 : psvRef.current.getPosition().yaw,
+			pitch: reset ? 0 : psvRef.current.getPosition().pitch,
+			zoom: reset ? 0 : psvRef.current.getZoomLevel(),
 		})
 		.then(() => {
-			// setPanoChanged(false);
-			// psvRef.current.setOption('defaultYaw', 0);
 			const visibleRange = psvRef.current.getPlugin(VisibleRangePlugin);
 			visibleRange.setRangesFromPanoData();
 			visibleRange.setVerticalRange([0, 0]);
