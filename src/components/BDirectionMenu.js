@@ -19,32 +19,6 @@ function DirectionsMenu({ psvRef, currentPanoProps, setCurrentPanoProps }) {
 	return (
 		<div className={styles.directionsMenu}>
 			<div className={styles.upperButtons}>
-				<Tooltip title='North East' placement='bottom' arrow>
-					<button
-						value='NORTHEAST'
-						onClick={() => {
-							setCurrentPanoProps({
-								...currentPanoProps,
-								direction: 'NORTHEAST',
-							});
-							loadPanorama(
-								psvRef,
-								panos[currentPanoProps.block][currentPanoProps.level][
-									'NORTHEAST'
-								][currentPanoProps.time],
-								panos[currentPanoProps.block][currentPanoProps.level][
-									'NORTHEAST'
-								]['panoData'],
-								setPanoChanged,
-								true
-							);
-						}}
-						className={[styles.button]}
-						style={{
-							backgroundColor: activeDirection === 'NORTHEAST' && '#F2F2F2',
-						}}
-					></button>
-				</Tooltip>
 				<Tooltip title='South East' placement='bottom' arrow>
 					<button
 						value='SOUTHEAST'
@@ -68,6 +42,32 @@ function DirectionsMenu({ psvRef, currentPanoProps, setCurrentPanoProps }) {
 						className={[styles.button]}
 						style={{
 							backgroundColor: activeDirection === 'SOUTHEAST' && '#F2F2F2',
+						}}
+					></button>
+				</Tooltip>
+				<Tooltip title='South' placement='bottom' arrow>
+					<button
+						value='SOUTH'
+						onClick={() => {
+							setCurrentPanoProps({
+								...currentPanoProps,
+								direction: 'SOUTH',
+							});
+							loadPanorama(
+								psvRef,
+								panos[currentPanoProps.block][currentPanoProps.level]['SOUTH'][
+									currentPanoProps.time
+								],
+								panos[currentPanoProps.block][currentPanoProps.level]['SOUTH'][
+									'panoData'
+								],
+								setPanoChanged,
+								true
+							);
+						}}
+						className={[styles.button]}
+						style={{
+							backgroundColor: activeDirection === 'SOUTH' && '#F2F2F2',
 						}}
 					></button>
 				</Tooltip>
@@ -99,20 +99,20 @@ function DirectionsMenu({ psvRef, currentPanoProps, setCurrentPanoProps }) {
 				</Tooltip>
 			</div>
 			<div className={styles.midButtons}>
-				<Tooltip title='North' placement='bottom' arrow>
+				<Tooltip title='East' placement='bottom' arrow>
 					<button
-						value='NORTH'
+						value='EAST'
 						onClick={() => {
 							setCurrentPanoProps({
 								...currentPanoProps,
-								direction: 'NORTH',
+								direction: 'EAST',
 							});
 							loadPanorama(
 								psvRef,
-								panos[currentPanoProps.block][currentPanoProps.level]['NORTH'][
+								panos[currentPanoProps.block][currentPanoProps.level]['EAST'][
 									currentPanoProps.time
 								],
-								panos[currentPanoProps.block][currentPanoProps.level]['NORTH'][
+								panos[currentPanoProps.block][currentPanoProps.level]['EAST'][
 									'panoData'
 								],
 								setPanoChanged,
@@ -121,7 +121,7 @@ function DirectionsMenu({ psvRef, currentPanoProps, setCurrentPanoProps }) {
 						}}
 						className={[styles.button]}
 						style={{
-							backgroundColor: activeDirection === 'NORTH' && '#F2F2F2',
+							backgroundColor: activeDirection === 'EAST' && '#F2F2F2',
 						}}
 					></button>
 				</Tooltip>
@@ -179,21 +179,21 @@ function DirectionsMenu({ psvRef, currentPanoProps, setCurrentPanoProps }) {
 				</Tooltip>
 			</div>
 			<div className={styles.bottomButtons}>
-				<Tooltip title='North West' placement='bottom' arrow>
+				<Tooltip title='North & North East' placement='bottom' arrow>
 					<button
-						value='NORTHWEST_2'
+						value='NORTHEAST'
 						onClick={() => {
 							setCurrentPanoProps({
 								...currentPanoProps,
-								direction: 'NORTHWEST_2',
+								direction: 'NORTHEAST',
 							});
 							loadPanorama(
 								psvRef,
 								panos[currentPanoProps.block][currentPanoProps.level][
-									'NORTHWEST_2'
+									'NORTHEAST'
 								][currentPanoProps.time],
 								panos[currentPanoProps.block][currentPanoProps.level][
-									'NORTHWEST_2'
+									'NORTHEAST'
 								]['panoData'],
 								setPanoChanged,
 								true
@@ -201,25 +201,25 @@ function DirectionsMenu({ psvRef, currentPanoProps, setCurrentPanoProps }) {
 						}}
 						className={[styles.button]}
 						style={{
-							backgroundColor: activeDirection === 'NORTHWEST_2' && '#F2F2F2',
+							backgroundColor: activeDirection === 'NORTHEAST' && '#F2F2F2',
 						}}
 					></button>
 				</Tooltip>
-				<Tooltip title='North West' placement='bottom' arrow>
+				<Tooltip title='North & North West' placement='bottom' arrow>
 					<button
-						value='NORTHWEST_1'
+						value='NORTHWEST'
 						onClick={() => {
 							setCurrentPanoProps({
 								...currentPanoProps,
-								direction: 'NORTHWEST_1',
+								direction: 'NORTHWEST',
 							});
 							loadPanorama(
 								psvRef,
 								panos[currentPanoProps.block][currentPanoProps.level][
-									'NORTHWEST_1'
+									'NORTHWEST'
 								][currentPanoProps.time],
 								panos[currentPanoProps.block][currentPanoProps.level][
-									'NORTHWEST_1'
+									'NORTHWEST'
 								]['panoData'],
 								setPanoChanged,
 								true
@@ -227,7 +227,7 @@ function DirectionsMenu({ psvRef, currentPanoProps, setCurrentPanoProps }) {
 						}}
 						className={[styles.button]}
 						style={{
-							backgroundColor: activeDirection === 'NORTHWEST_1' && '#F2F2F2',
+							backgroundColor: activeDirection === 'NORTHWEST' && '#F2F2F2',
 						}}
 					></button>
 				</Tooltip>
