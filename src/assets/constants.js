@@ -1267,7 +1267,7 @@ export const panos = {
 					croppedX: 1080,
 					croppedY: 0,
 				},
-				url: 'C_Block_27th_floor_se',
+				url: 'C_Block_27th_floor_se_e',
 			},
 			SOUTHWEST: {
 				Day: require('../assets/panos/C_BLOCK/SOUTHWEST/C-100-Day.jpg'),
@@ -1314,7 +1314,7 @@ export const panos = {
 					croppedX: 1080,
 					croppedY: 0,
 				},
-				url: 'C_Block_24th_floor_se',
+				url: 'C_Block_24th_floor_se_e',
 			},
 			SOUTHWEST: {
 				Day: require('../assets/panos/C_BLOCK/SOUTHWEST/C-85-Day.jpg'),
@@ -1361,7 +1361,7 @@ export const panos = {
 					croppedX: 1080,
 					croppedY: 0,
 				},
-				url: 'C_Block_20th_floor_se',
+				url: 'C_Block_20th_floor_se_e',
 			},
 			SOUTHWEST: {
 				Day: require('../assets/panos/C_BLOCK/SOUTHWEST/C-72-Day.jpg'),
@@ -1408,7 +1408,7 @@ export const panos = {
 					croppedX: 1080,
 					croppedY: 0,
 				},
-				url: 'C_Block_16th_floor_se',
+				url: 'C_Block_16th_floor_se_e',
 			},
 			SOUTHWEST: {
 				Day: require('../assets/panos/C_BLOCK/SOUTHWEST/C-58-Day.jpg'),
@@ -1455,7 +1455,7 @@ export const panos = {
 					croppedX: 1080,
 					croppedY: 0,
 				},
-				url: 'C_Block_12th_floor_se',
+				url: 'C_Block_12th_floor_se_e',
 			},
 			SOUTHWEST: {
 				Day: require('../assets/panos/C_BLOCK/SOUTHWEST/C-44-Day.jpg'),
@@ -1502,7 +1502,7 @@ export const panos = {
 					croppedX: 1080,
 					croppedY: 0,
 				},
-				url: 'C_Block_8th_floor_se',
+				url: 'C_Block_8th_floor_se_e',
 			},
 			SOUTHWEST: {
 				Day: require('../assets/panos/C_BLOCK/SOUTHWEST/C-31-Day.jpg'),
@@ -1549,7 +1549,7 @@ export const panos = {
 					croppedX: 1080,
 					croppedY: 0,
 				},
-				url: 'C_Block_5th_floor_se',
+				url: 'C_Block_5th_floor_se_e',
 			},
 			SOUTHWEST: {
 				Day: require('../assets/panos/C_BLOCK/SOUTHWEST/C-21-Day.jpg'),
