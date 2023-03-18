@@ -349,9 +349,9 @@ export const panos = {
 				panoData: null,
 				url: 'B_Block_36th_floor_360',
 			},
-			NORTH: {
-				Day: require('../assets/panos/B_BLOCK/NORTH/B-125-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTH/B-125-Night.jpg'),
+			EAST: {
+				Day: require('../assets/panos/B_BLOCK/EAST/B-125-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/EAST/B-125-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -375,9 +375,9 @@ export const panos = {
 				},
 				url: 'B_Block_36th_floor_ne',
 			},
-			NORTHWEST_1: {
-				Day: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-125-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-125-Night.jpg'),
+			NORTHWEST: {
+				Day: require('../assets/panos/B_BLOCK/NORTHWEST/B-125-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/NORTHWEST/B-125-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -388,9 +388,9 @@ export const panos = {
 				},
 				url: 'B_Block_36th_floor_nw_1',
 			},
-			NORTHWEST_2: {
-				Day: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-125-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-125-Night.jpg'),
+			SOUTH: {
+				Day: require('../assets/panos/B_BLOCK/SOUTH/B-125-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/SOUTH/B-125-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -448,9 +448,9 @@ export const panos = {
 				panoData: null,
 				url: 'B_Block_33rd_floor_360',
 			},
-			NORTH: {
-				Day: require('../assets/panos/B_BLOCK/NORTH/B-115-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTH/B-115-Night.jpg'),
+			EAST: {
+				Day: require('../assets/panos/B_BLOCK/EAST/B-115-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/EAST/B-115-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -474,9 +474,9 @@ export const panos = {
 				},
 				url: 'B_Block_33rd_floor_ne',
 			},
-			NORTHWEST_1: {
-				Day: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-115-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-115-Night.jpg'),
+			NORTHWEST: {
+				Day: require('../assets/panos/B_BLOCK/NORTHWEST/B-115-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/NORTHWEST/B-115-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -487,9 +487,9 @@ export const panos = {
 				},
 				url: 'B_Block_33rd_floor_nw_1',
 			},
-			NORTHWEST_2: {
-				Day: require('../assets/panos/B_BLOCK/NORTHWEST_2/B-115-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTHWEST_2/B-115-Night.jpg'),
+			SOUTH: {
+				Day: require('../assets/panos/B_BLOCK/SOUTH/B-115-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/SOUTH/B-115-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -547,9 +547,9 @@ export const panos = {
 				panoData: null,
 				url: 'B_Block_29th_floor_360',
 			},
-			NORTH: {
-				Day: require('../assets/panos/B_BLOCK/NORTH/B-101-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTH/B-101-Night.jpg'),
+			EAST: {
+				Day: require('../assets/panos/B_BLOCK/EAST/B-101-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/EAST/B-101-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -573,9 +573,9 @@ export const panos = {
 				},
 				url: 'B_Block_29th_floor_ne',
 			},
-			NORTHWEST_1: {
-				Day: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-101-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-101-Night.jpg'),
+			NORTHWEST: {
+				Day: require('../assets/panos/B_BLOCK/NORTHWEST/B-101-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/NORTHWEST/B-101-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -586,9 +586,9 @@ export const panos = {
 				},
 				url: 'B_Block_29th_floor_nw_1',
 			},
-			NORTHWEST_2: {
-				Day: require('../assets/panos/B_BLOCK/NORTHWEST_2/B-101-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTHWEST_2/B-101-Night.jpg'),
+			SOUTH: {
+				Day: require('../assets/panos/B_BLOCK/SOUTH/B-101-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/SOUTH/B-101-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -646,9 +646,9 @@ export const panos = {
 				panoData: null,
 				url: 'B_Block_25th_floor_360',
 			},
-			NORTH: {
-				Day: require('../assets/panos/B_BLOCK/NORTH/B-88-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTH/B-88-Night.jpg'),
+			EAST: {
+				Day: require('../assets/panos/B_BLOCK/EAST/B-88-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/EAST/B-88-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -672,9 +672,9 @@ export const panos = {
 				},
 				url: 'B_Block_25th_floor_ne',
 			},
-			NORTHWEST_1: {
-				Day: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-88-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-88-Night.jpg'),
+			NORTHWEST: {
+				Day: require('../assets/panos/B_BLOCK/NORTHWEST/B-88-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/NORTHWEST/B-88-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -685,9 +685,9 @@ export const panos = {
 				},
 				url: 'B_Block_25th_floor_nw_1',
 			},
-			NORTHWEST_2: {
-				Day: require('../assets/panos/B_BLOCK/NORTHWEST_2/B-88-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTHWEST_2/B-88-Night.jpg'),
+			SOUTH: {
+				Day: require('../assets/panos/B_BLOCK/SOUTH/B-88-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/SOUTH/B-88-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -739,105 +739,105 @@ export const panos = {
 				url: 'B_Block_25th_floor_w',
 			},
 		},
-		// F21: {
-		// 	360: {
-		// 		Day: require('../assets/panos/B_BLOCK/360/B-74-Day.jpg'),
-		// 		Night: require('../assets/panos/B_BLOCK/360/B-74-Night.jpg'),
-		// 		panoData: null,
-		// 		url: 'B_Block_21st_floor_360',
-		// 	},
-		// 	NORTH: {
-		// 		Day: require('../assets/panos/B_BLOCK/NORTH/B-74-Day.jpg'),
-		// 		Night: require('../assets/panos/B_BLOCK/NORTH/B-74-Night.jpg'),
-		// 		panoData: {
-		// 	fullWidth: 8640,
-		// 	fullHeight: 4320,
-		// 	croppedWidth: 5184,
-		// 	croppedHeight: 4320,
-		// 	croppedX: 1728,
-		// 	croppedY: 0,
-		// },
-		// 		url: 'B_Block_21st_floor_n',
-		// 	},
-		// 	NORTHEAST: {
-		// 		Day: require('../assets/panos/B_BLOCK/NORTHEAST/B-74-Day.jpg'),
-		// 		Night: require('../assets/panos/B_BLOCK/NORTHEAST/B-74-Night.jpg'),
-		// 		panoData: {
-		// 	fullWidth: 8640,
-		// 	fullHeight: 4320,
-		// 	croppedWidth: 5184,
-		// 	croppedHeight: 4320,
-		// 	croppedX: 1728,
-		// 	croppedY: 0,
-		// },
-		// 		url: 'B_Block_21st_floor_ne',
-		// 	},
-		// 	NORTHWEST_1: {
-		// 		Day: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-74-Day.jpg'),
-		// 		Night: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-74-Night.jpg'),
-		// 		panoData: {
-		// 	fullWidth: 8640,
-		// 	fullHeight: 4320,
-		// 	croppedWidth: 5184,
-		// 	croppedHeight: 4320,
-		// 	croppedX: 1728,
-		// 	croppedY: 0,
-		// },
-		// 		url: 'B_Block_21st_floor_nw_1',
-		// 	},
-		// 	NORTHWEST_2: {
-		// 		Day: require('../assets/panos/B_BLOCK/NORTHWEST_2/B-74-Day.jpg'),
-		// 		Night: require('../assets/panos/B_BLOCK/NORTHWEST_2/B-74-Night.jpg'),
-		// 		panoData: {
-		// 	fullWidth: 8640,
-		// 	fullHeight: 4320,
-		// 	croppedWidth: 5184,
-		// 	croppedHeight: 4320,
-		// 	croppedX: 1728,
-		// 	croppedY: 0,
-		// },
-		// 		url: 'B_Block_21st_floor_nw_2',
-		// 	},
-		// 	SOUTHEAST: {
-		// 		Day: require('../assets/panos/B_BLOCK/SOUTHEAST/B-74-Day.jpg'),
-		// 		Night: require('../assets/panos/B_BLOCK/SOUTHEAST/B-74-Night.jpg'),
-		// 		panoData: {
-		// 	fullWidth: 8640,
-		// 	fullHeight: 4320,
-		// 	croppedWidth: 4320,
-		// 	croppedHeight: 4320,
-		// 	croppedX: 2160,
-		// 	croppedY: 0,
-		// },
-		// 		url: 'B_Block_21st_floor_se',
-		// 	},
-		// 	SOUTHWEST: {
-		// 		Day: require('../assets/panos/B_BLOCK/SOUTHWEST/B-74-Day.jpg'),
-		// 		Night: require('../assets/panos/B_BLOCK/SOUTHWEST/B-74-Night.jpg'),
-		// 		panoData: {
-		// 	fullWidth: 8640,
-		// 	fullHeight: 4320,
-		// 	croppedWidth: 6480,
-		// 	croppedHeight: 4320,
-		// 	croppedX: 1080,
-		// 	croppedY: 0,
-		// },
-		// 		url: 'B_Block_21st_floor_sw',
-		// 	},
-		// 	WEST: {
-		// 		Day: require('../assets/panos/B_BLOCK/WEST/B-74-Day.jpg'),
-		// 		Night: require('../assets/panos/B_BLOCK/WEST/B-74-Night.jpg'),
-		// 		panoData: {
-		// 	fullWidth: 8640,
-		// 	fullHeight: 4320,
-		// 	croppedWidth: 4320,
-		// 	croppedHeight: 4320,
-		// 	croppedX: 2160,
-		// 	croppedY: 0,
-		// },
-		// 		url: 'B_Block_21st_floor_w',
-		// 	},
-		// },
+		F21: {
+			360: {
+				Day: require('../assets/panos/B_BLOCK/360/B-74-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/360/B-74-Night.jpg'),
+				panoData: null,
+				url: 'B_Block_21st_floor_360',
+			},
+			EAST: {
+				Day: require('../assets/panos/B_BLOCK/EAST/B-74-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/EAST/B-74-Night.jpg'),
+				panoData: {
+					fullWidth: 8640,
+					fullHeight: 4320,
+					croppedWidth: 5184,
+					croppedHeight: 4320,
+					croppedX: 1728,
+					croppedY: 0,
+				},
+				url: 'B_Block_21st_floor_n',
+			},
+			NORTHEAST: {
+				Day: require('../assets/panos/B_BLOCK/NORTHEAST/B-74-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/NORTHEAST/B-74-Night.jpg'),
+				panoData: {
+					fullWidth: 8640,
+					fullHeight: 4320,
+					croppedWidth: 5184,
+					croppedHeight: 4320,
+					croppedX: 1728,
+					croppedY: 0,
+				},
+				url: 'B_Block_21st_floor_ne',
+			},
+			NORTHWEST: {
+				Day: require('../assets/panos/B_BLOCK/NORTHWEST/B-74-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/NORTHWEST/B-74-Night.jpg'),
+				panoData: {
+					fullWidth: 8640,
+					fullHeight: 4320,
+					croppedWidth: 5184,
+					croppedHeight: 4320,
+					croppedX: 1728,
+					croppedY: 0,
+				},
+				url: 'B_Block_21st_floor_nw_1',
+			},
+			SOUTH: {
+				Day: require('../assets/panos/B_BLOCK/SOUTH/B-74-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/SOUTH/B-74-Night.jpg'),
+				panoData: {
+					fullWidth: 8640,
+					fullHeight: 4320,
+					croppedWidth: 5184,
+					croppedHeight: 4320,
+					croppedX: 1728,
+					croppedY: 0,
+				},
+				url: 'B_Block_21st_floor_nw_2',
+			},
+			SOUTHEAST: {
+				Day: require('../assets/panos/B_BLOCK/SOUTHEAST/B-74-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/SOUTHEAST/B-74-Night.jpg'),
+				panoData: {
+					fullWidth: 8640,
+					fullHeight: 4320,
+					croppedWidth: 4320,
+					croppedHeight: 4320,
+					croppedX: 2160,
+					croppedY: 0,
+				},
+				url: 'B_Block_21st_floor_se',
+			},
+			SOUTHWEST: {
+				Day: require('../assets/panos/B_BLOCK/SOUTHWEST/B-74-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/SOUTHWEST/B-74-Night.jpg'),
+				panoData: {
+					fullWidth: 8640,
+					fullHeight: 4320,
+					croppedWidth: 6480,
+					croppedHeight: 4320,
+					croppedX: 1080,
+					croppedY: 0,
+				},
+				url: 'B_Block_21st_floor_sw',
+			},
+			WEST: {
+				Day: require('../assets/panos/B_BLOCK/WEST/B-74-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/WEST/B-74-Night.jpg'),
+				panoData: {
+					fullWidth: 8640,
+					fullHeight: 4320,
+					croppedWidth: 4320,
+					croppedHeight: 4320,
+					croppedX: 2160,
+					croppedY: 0,
+				},
+				url: 'B_Block_21st_floor_w',
+			},
+		},
 		F17: {
 			360: {
 				Day: require('../assets/panos/B_BLOCK/360/B-60-Day.jpg'),
@@ -845,9 +845,9 @@ export const panos = {
 				panoData: null,
 				url: 'B_Block_17th_floor_360',
 			},
-			NORTH: {
-				Day: require('../assets/panos/B_BLOCK/NORTH/B-60-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTH/B-60-Night.jpg'),
+			EAST: {
+				Day: require('../assets/panos/B_BLOCK/EAST/B-60-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/EAST/B-60-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -871,9 +871,9 @@ export const panos = {
 				},
 				url: 'B_Block_17th_floor_ne',
 			},
-			NORTHWEST_1: {
-				Day: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-60-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-60-Night.jpg'),
+			NORTHWEST: {
+				Day: require('../assets/panos/B_BLOCK/NORTHWEST/B-60-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/NORTHWEST/B-60-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -884,9 +884,9 @@ export const panos = {
 				},
 				url: 'B_Block_17th_floor_nw_1',
 			},
-			NORTHWEST_2: {
-				Day: require('../assets/panos/B_BLOCK/NORTHWEST_2/B-60-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTHWEST_2/B-60-Night.jpg'),
+			SOUTH: {
+				Day: require('../assets/panos/B_BLOCK/SOUTH/B-60-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/SOUTH/B-60-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -944,9 +944,9 @@ export const panos = {
 				panoData: null,
 				url: 'B_Block_13th_floor_360',
 			},
-			NORTH: {
-				Day: require('../assets/panos/B_BLOCK/NORTH/B-47-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTH/B-47-Night.jpg'),
+			EAST: {
+				Day: require('../assets/panos/B_BLOCK/EAST/B-47-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/EAST/B-47-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -970,9 +970,9 @@ export const panos = {
 				},
 				url: 'B_Block_13th_floor_ne',
 			},
-			NORTHWEST_1: {
-				Day: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-47-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-47-Night.jpg'),
+			NORTHWEST: {
+				Day: require('../assets/panos/B_BLOCK/NORTHWEST/B-47-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/NORTHWEST/B-47-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -983,9 +983,9 @@ export const panos = {
 				},
 				url: 'B_Block_13th_floor_nw_1',
 			},
-			NORTHWEST_2: {
-				Day: require('../assets/panos/B_BLOCK/NORTHWEST_2/B-47-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTHWEST_2/B-47-Night.jpg'),
+			SOUTH: {
+				Day: require('../assets/panos/B_BLOCK/SOUTH/B-47-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/SOUTH/B-47-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -1036,105 +1036,105 @@ export const panos = {
 				url: 'B_Block_13th_floor_w',
 			},
 		},
-		// F9: {
-		// 	360: {
-		// 		Day: require('../assets/panos/B_BLOCK/360/B-33-Day.jpg'),
-		// 		Night: require('../assets/panos/B_BLOCK/360/B-33-Night.jpg'),
-		// 		panoData: null,
-		// 		url: 'B_Block_9th_floor_360',
-		// 	},
-		// 	NORTH: {
-		// 		Day: require('../assets/panos/B_BLOCK/NORTH/B-33-Day.jpg'),
-		// 		Night: require('../assets/panos/B_BLOCK/NORTH/B-33-Night.jpg'),
-		// 		panoData: {
-		// 	fullWidth: 8640,
-		// 	fullHeight: 4320,
-		// 	croppedWidth: 5184,
-		// 	croppedHeight: 4320,
-		// 	croppedX: 1728,
-		// 	croppedY: 0,
-		// },
-		// 		url: 'B_Block_9th_floor_n',
-		// 	},
-		// 	NORTHEAST: {
-		// 		Day: require('../assets/panos/B_BLOCK/NORTHEAST/B-33-Day.jpg'),
-		// 		Night: require('../assets/panos/B_BLOCK/NORTHEAST/B-33-Night.jpg'),
-		// 		panoData: {
-		// 	fullWidth: 8640,
-		// 	fullHeight: 4320,
-		// 	croppedWidth: 5184,
-		// 	croppedHeight: 4320,
-		// 	croppedX: 1728,
-		// 	croppedY: 0,
-		// },
-		// 		url: 'B_Block_9th_floor_ne',
-		// 	},
-		// 	NORTHWEST_1: {
-		// 		Day: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-33-Day.jpg'),
-		// 		Night: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-33-Night.jpg'),
-		// 		panoData: {
-		// 	fullWidth: 8640,
-		// 	fullHeight: 4320,
-		// 	croppedWidth: 5184,
-		// 	croppedHeight: 4320,
-		// 	croppedX: 1728,
-		// 	croppedY: 0,
-		// },
-		// 		url: 'B_Block_9th_floor_nw_1',
-		// 	},
-		// 	NORTHWEST_2: {
-		// 		Day: require('../assets/panos/B_BLOCK/NORTHWEST_2/B-33-Day.jpg'),
-		// 		Night: require('../assets/panos/B_BLOCK/NORTHWEST_2/B-33-Night.jpg'),
-		// 		panoData: {
-		// 	fullWidth: 8640,
-		// 	fullHeight: 4320,
-		// 	croppedWidth: 5184,
-		// 	croppedHeight: 4320,
-		// 	croppedX: 1728,
-		// 	croppedY: 0,
-		// },
-		// 		url: 'B_Block_9th_floor_nw_2',
-		// 	},
-		// 	SOUTHEAST: {
-		// 		Day: require('../assets/panos/B_BLOCK/SOUTHEAST/B-33-Day.jpg'),
-		// 		Night: require('../assets/panos/B_BLOCK/SOUTHEAST/B-33-Night.jpg'),
-		// 		panoData: {
-		// 	fullWidth: 8640,
-		// 	fullHeight: 4320,
-		// 	croppedWidth: 4320,
-		// 	croppedHeight: 4320,
-		// 	croppedX: 2160,
-		// 	croppedY: 0,
-		// },
-		// 		url: 'B_Block_9th_floor_se',
-		// 	},
-		// 	SOUTHWEST: {
-		// 		Day: require('../assets/panos/B_BLOCK/SOUTHWEST/B-33-Day.jpg'),
-		// 		Night: require('../assets/panos/B_BLOCK/SOUTHWEST/B-33-Night.jpg'),
-		// 		panoData: {
-		// 	fullWidth: 8640,
-		// 	fullHeight: 4320,
-		// 	croppedWidth: 6480,
-		// 	croppedHeight: 4320,
-		// 	croppedX: 1080,
-		// 	croppedY: 0,
-		// },
-		// 		url: 'B_Block_9th_floor_sw',
-		// 	},
-		// 	WEST: {
-		// 		Day: require('../assets/panos/B_BLOCK/WEST/B-33-Day.jpg'),
-		// 		Night: require('../assets/panos/B_BLOCK/WEST/B-33-Night.jpg'),
-		// 		panoData: {
-		// 	fullWidth: 8640,
-		// 	fullHeight: 4320,
-		// 	croppedWidth: 4320,
-		// 	croppedHeight: 4320,
-		// 	croppedX: 2160,
-		// 	croppedY: 0,
-		// },
-		// 		url: 'B_Block_9th_floor_w',
-		// 	},
-		// },
+		F9: {
+			360: {
+				Day: require('../assets/panos/B_BLOCK/360/B-33-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/360/B-33-Night.jpg'),
+				panoData: null,
+				url: 'B_Block_9th_floor_360',
+			},
+			EAST: {
+				Day: require('../assets/panos/B_BLOCK/EAST/B-33-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/EAST/B-33-Night.jpg'),
+				panoData: {
+					fullWidth: 8640,
+					fullHeight: 4320,
+					croppedWidth: 5184,
+					croppedHeight: 4320,
+					croppedX: 1728,
+					croppedY: 0,
+				},
+				url: 'B_Block_9th_floor_n',
+			},
+			NORTHEAST: {
+				Day: require('../assets/panos/B_BLOCK/NORTHEAST/B-33-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/NORTHEAST/B-33-Night.jpg'),
+				panoData: {
+					fullWidth: 8640,
+					fullHeight: 4320,
+					croppedWidth: 5184,
+					croppedHeight: 4320,
+					croppedX: 1728,
+					croppedY: 0,
+				},
+				url: 'B_Block_9th_floor_ne',
+			},
+			NORTHWEST: {
+				Day: require('../assets/panos/B_BLOCK/NORTHWEST/B-33-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/NORTHWEST/B-33-Night.jpg'),
+				panoData: {
+					fullWidth: 8640,
+					fullHeight: 4320,
+					croppedWidth: 5184,
+					croppedHeight: 4320,
+					croppedX: 1728,
+					croppedY: 0,
+				},
+				url: 'B_Block_9th_floor_nw_1',
+			},
+			SOUTH: {
+				Day: require('../assets/panos/B_BLOCK/SOUTH/B-33-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/SOUTH/B-33-Night.jpg'),
+				panoData: {
+					fullWidth: 8640,
+					fullHeight: 4320,
+					croppedWidth: 5184,
+					croppedHeight: 4320,
+					croppedX: 1728,
+					croppedY: 0,
+				},
+				url: 'B_Block_9th_floor_nw_2',
+			},
+			SOUTHEAST: {
+				Day: require('../assets/panos/B_BLOCK/SOUTHEAST/B-33-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/SOUTHEAST/B-33-Night.jpg'),
+				panoData: {
+					fullWidth: 8640,
+					fullHeight: 4320,
+					croppedWidth: 4320,
+					croppedHeight: 4320,
+					croppedX: 2160,
+					croppedY: 0,
+				},
+				url: 'B_Block_9th_floor_se',
+			},
+			SOUTHWEST: {
+				Day: require('../assets/panos/B_BLOCK/SOUTHWEST/B-33-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/SOUTHWEST/B-33-Night.jpg'),
+				panoData: {
+					fullWidth: 8640,
+					fullHeight: 4320,
+					croppedWidth: 6480,
+					croppedHeight: 4320,
+					croppedX: 1080,
+					croppedY: 0,
+				},
+				url: 'B_Block_9th_floor_sw',
+			},
+			WEST: {
+				Day: require('../assets/panos/B_BLOCK/WEST/B-33-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/WEST/B-33-Night.jpg'),
+				panoData: {
+					fullWidth: 8640,
+					fullHeight: 4320,
+					croppedWidth: 4320,
+					croppedHeight: 4320,
+					croppedX: 2160,
+					croppedY: 0,
+				},
+				url: 'B_Block_9th_floor_w',
+			},
+		},
 		F5: {
 			360: {
 				Day: require('../assets/panos/B_BLOCK/360/B-20-Day.jpg'),
@@ -1142,9 +1142,9 @@ export const panos = {
 				panoData: null,
 				url: 'B_Block_5th_floor_360',
 			},
-			NORTH: {
-				Day: require('../assets/panos/B_BLOCK/NORTH/B-20-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTH/B-20-Night.jpg'),
+			EAST: {
+				Day: require('../assets/panos/B_BLOCK/EAST/B-20-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/EAST/B-20-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -1168,9 +1168,9 @@ export const panos = {
 				},
 				url: 'B_Block_5th_floor_ne',
 			},
-			NORTHWEST_1: {
-				Day: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-20-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTHWEST_1/B-20-Night.jpg'),
+			NORTHWEST: {
+				Day: require('../assets/panos/B_BLOCK/NORTHWEST/B-20-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/NORTHWEST/B-20-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
@@ -1181,9 +1181,9 @@ export const panos = {
 				},
 				url: 'B_Block_5th_floor_nw_1',
 			},
-			NORTHWEST_2: {
-				Day: require('../assets/panos/B_BLOCK/NORTHWEST_2/B-20-Day.jpg'),
-				Night: require('../assets/panos/B_BLOCK/NORTHWEST_2/B-20-Night.jpg'),
+			SOUTH: {
+				Day: require('../assets/panos/B_BLOCK/SOUTH/B-20-Day.jpg'),
+				Night: require('../assets/panos/B_BLOCK/SOUTH/B-20-Night.jpg'),
 				panoData: {
 					fullWidth: 8640,
 					fullHeight: 4320,
