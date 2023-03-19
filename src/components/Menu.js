@@ -120,8 +120,7 @@ const BlockItem = ({
 	setCurrentPanoProps,
 }) => {
 	const [isActive, setIsActive] = useState(false);
-	const appContext = useContext(AppContext);
-	const { setPanoChanged } = appContext;
+	const { setPanoChanged } = useContext(AppContext);
 
 	useEffect(() => {
 		setIsActive(block === currentPanoProps.block);
