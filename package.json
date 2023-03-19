@@ -2,6 +2,7 @@
 	"name": "towers-v.04",
 	"version": "0.1.0",
 	"private": true,
+	"homepage": "http://localhost:3000/360/neva_yali",
 	"dependencies": {
 		"@emotion/react": "^11.10.6",
 		"@emotion/styled": "^11.10.6",
